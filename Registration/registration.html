@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+        body {
+            font-family: 'Montserrat';
+        }
+
+        #container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ForWidth {
+            width: 100%;
+        }
+      
+        .center {
+            text-align: center;
+        }
+
+        .batchimg {
+            width: 30px;
+            padding-bottom: 0px;
+        }
+
+        #heading {
+            color: #1FAA59;
+
+        }
+        #calender{
+            text-align: center;
+        }
+        #bgc {
+            background-color: #6AC47E;
+            padding: 10px;
+        }
+        .btn{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h3><a href="../index.html" tar>Home</a></h3>
+    <h3 style="padding-bottom: 0px;"><a href="../Services/service.html">Service</a></h3>
+    <h1 class="center" id="heading" style="padding-top: 0px;">
+        <img src="../Images/Batch.jpg" alt="batch-img" class="batchimg">
+        Your Event
+    </h1>
+    <h3 class="center" id="bgc">Online Registration</h3>
+    <form action="" method="post">
+        <div>
+            <table id="container">
+                <div>
+                    <tr>
+                        <td><label for="FirstName">First Name</label></td>
+                        <td><label for="LastName" style="width: 100%;">Last Name</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" name="FirstName" id="" placeholder="First Name" style="width: 90%;"></td>
+                        <td><input type="text" name="LastName" id="" placeholder="Last Name" style="width: 100%;"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="2"><label for="EmailAddress">Email Address</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="email" name="EmailAddress" class="ForWidth" id=""
+                                placeholder="Email Address"></td>
+                    </tr>
+
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="2"><label for="Company">Company(If Applicable)</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="Company" id="" class="ForWidth" placeholder="Company">
+                        </td>
+                    </tr>
+
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="2"><label for="Address">Physical Address</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="Address" class="ForWidth" id=""
+                                placeholder="Physical Address"></td>
+                    </tr>
+
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="2"><label for="">Date Of Birth</label></td>
+                    </tr>
+                    <tr id = "dob">
+                        <td colspan="3" >
+                            <input type="text" name="month" id="" placeholder="Month">
+                            <input type="number" name="Day" id="" placeholder="Day" min="1" max="31">
+                            <input type="number" name="Year" id="" placeholder="Year" min="1900">
+                            <img src="../Images/calender.jfif" alt="" width="20px" id="calender">
+                        </td>
+                    </tr>
+
+
+                </div>
+                
+
+
+
+            </table>
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
